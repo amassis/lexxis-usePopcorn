@@ -258,7 +258,7 @@ function MovieDetails({ onCloseMovie, onAddWatched, selectedId, watched }) {
 					setError("");
 
 					// Call OMDB to fetch the selected movie
-					const res = await fetch(`http://www.omdbapi.com/?apikey=${OMDB_KEY}&i=${selectedId}`);
+					const res = await fetch(`https://www.omdbapi.com/?apikey=${OMDB_KEY}&i=${selectedId}`);
 
 					// If Fetch didn't return valid results throw error
 					if (!res.ok) throw new Error("Something went wrong while fetching movie details");
